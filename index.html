@@ -19,16 +19,21 @@
                 display: none;
             }
             .papersize{
-                width: 190mm; /* A4 width */
+                width: 170mm; /* A4 width */
                 height: 255mm; /* A4 height */
                 margin: 0 auto;
+                margin-bottom: 55px;
+                padding-top: 40px;
+                
+                
+                
             }
             span{
-                font-size: 23px;
+                font-size: 20px;
                 text-decoration: underline 1.5px solid;
             }
             .pups{
-                font-size: 20px;
+                font-size: 19px;
                 text-decoration: underline 1.5px solid;
             }
             .payment-form-div{
@@ -48,7 +53,13 @@
         .font3{
             font-size: 16px;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        } 
+        }
+        .am{
+            display: none;
+        }
+        .notActive{
+            display: none;
+        }
     </style>
     <title>Payment Form</title>
 </head>
@@ -57,95 +68,208 @@
         <h1 class="sticky-top text-center bg-dark text-light">Drivers List</h1>
         <table class="table table-striped table-hover table-dark text-center border">
             <tr>
+                <th><button class="btn btn-none tigBtn">Tigray</button></th>
+                <th><button class="btn btn-none amBtn">Amhara</button></th>
+            </tr>
+            <tr>
                 <th>Driver's Name</th>
                 <th>Selection For Printing</th>
             </tr>
-            <tr>
+            <tr class="Tig">
                 <td>G/Hiwot Teklu</td>
                 <td class=""><input class="form-check-input me-1" type="checkbox"></td>
             </tr>
-            <tr>
+            <tr class="Tig">
                 <td>Samuel Tsegay</td>
                 <td class=""><input class="form-check-input me-1" type="checkbox"></td>
             </tr>
-            <tr>
+            <tr class="Tig notActive">
                 <td>Hagos Berhe</td>
                 <td class=""><input class="form-check-input me-1" type="checkbox"></td>
             </tr>
-            <tr>
+            <tr class="Tig notActive">
                 <td>Dawit G/hiwot</td>
                 <td class=""><input class="form-check-input me-1" type="checkbox"></td>
             </tr>
-            <tr>
+            <tr class="Tig">
                 <td>Kidu Tadesse</td>
                 <td class=""><input class="form-check-input me-1" type="checkbox"></td>
             </tr>
-            <tr>
+            <tr class="Tig">
                 <td>Amdom Fitsum</td>
                 <td class=""><input class="form-check-input me-1" type="checkbox"></td>
             </tr>
-            <tr>
+            <tr class="Tig">
                 <td>Goitom Gebru</td>
                 <td class=""><input class="form-check-input me-1" type="checkbox"></td>
             </tr>
-            <tr>
+            <tr class="Tig notActive">
                 <td>Girmay Mehari</td>
                 <td class=""><input class="form-check-input me-1" type="checkbox"></td>
             </tr>
-            <tr>
+            <tr class="Tig">
                 <td>Gezaie Kiros</td>
                 <td class=""><input class="form-check-input me-1" type="checkbox"></td>
             </tr>
-            <tr>
+            <tr class="Tig">
                 <td>Goitom Hadera</td>
                 <td class=""><input class="form-check-input me-1" type="checkbox"></td>
             </tr>
-            <tr>
+            <tr class="Tig">
                 <td>Tesfu Hailu</td>
                 <td class=""><input class="form-check-input me-1" type="checkbox"></td>
             </tr>
-            <tr>
+            <tr class="Tig">
                 <td>Mokonen Abreha</td>
                 <td class=""><input class="form-check-input me-1" type="checkbox"></td>
             </tr>
-            <tr>
+            <tr class="Tig">
                 <td>Yirgalem Abreha</td>
                 <td class=""><input class="form-check-input me-1" type="checkbox"></td>
             </tr>
-            <tr>
+            <tr class="Tig notActive">
                 <td>Yonas Guesh</td>
                 <td class=""><input class="form-check-input me-1" type="checkbox"></td>
             </tr>
-            <tr>
+            <tr class="Tig">
                 <td>Nurahmed Mohamed</td>
                 <td class=""><input class="form-check-input me-1" type="checkbox"></td>
             </tr>
-            <tr>
+            <tr class="Tig">
                 <td>Abdulkadir Nurhussein</td>
                 <td class=""><input class="form-check-input me-1" type="checkbox"></td>
             </tr>
-            <tr>
+            <tr class="Tig">
                 <td>Ebrahim Mohamed</td>
                 <td class=""><input class="form-check-input me-1" type="checkbox"></td>
             </tr>
-            <tr>
+            <tr class="Tig">
                 <td>Dejen Kiros</td>
                 <td class=""><input class="form-check-input me-1" type="checkbox"></td>
             </tr>
-            <tr>
+            <tr class="Tig notActive">
                 <td>Mekonnen Weldegerima</td>
                 <td class=""><input class="form-check-input me-1" type="checkbox"></td>
             </tr>
-            <tr>
+            <tr class="Tig notActive">
                 <td>Libsom Kidanu</td>
                 <td class=""><input class="form-check-input me-1" type="checkbox"></td>
             </tr>
+            <!-- Amhara -->
+            <tr class="am">
+                <td>Tewodros Tesfahun</td>
+                <td class=""><input class="form-check-input me-1" type="checkbox"></td>
+            </tr>
+            <tr class="am">
+                <td>Altaseb Beyene</td>
+                <td class=""><input class="form-check-input me-1" type="checkbox"></td>
+            </tr>
+            <tr class="am">
+                <td>Yihun Aschale</td>
+                <td class=""><input class="form-check-input me-1" type="checkbox"></td>
+            </tr>
+            <tr class="am">
+                <td>Yohannis Teshome</td>
+                <td class=""><input class="form-check-input me-1" type="checkbox"></td>
+            </tr>
+            <tr class="am">
+                <td>Mohammed Seid</td>
+                <td class=""><input class="form-check-input me-1" type="checkbox"></td>
+            </tr>
+            <tr class="am">
+                <td>Achenef Gedamu</td>
+                <td class=""><input class="form-check-input me-1" type="checkbox"></td>
+            </tr>
+            <tr class="am">
+                <td>Temesgen Birhane</td>
+                <td class=""><input class="form-check-input me-1" type="checkbox"></td>
+            </tr>
+            <tr class="am">
+                <td>Ebrahim Dawud</td>
+                <td class=""><input class="form-check-input me-1" type="checkbox"></td>
+            </tr>
+            <tr class="am">
+                <td>Kemal Seid</td>
+                <td class=""><input class="form-check-input me-1" type="checkbox"></td>
+            </tr>
+            <tr class="am">
+                <td>Yonas Tilahun</td>
+                <td class=""><input class="form-check-input me-1" type="checkbox"></td>
+            </tr>
+            <tr class="am">
+                <td>Tesfamikael Misganaw</td>
+                <td class=""><input class="form-check-input me-1" type="checkbox"></td>
+            </tr>
+            <tr class="am">
+                <td>Mengistu Adimas</td>
+                <td class=""><input class="form-check-input me-1" type="checkbox"></td>
+            </tr>            
         </table>
     </div>
     <div id="nameDisplayContainer"></div>
 <script>
 
 const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+const tigBtn = document.querySelector(".tigBtn");
+const tigElement = document.querySelectorAll(".Tig");
+const notActive = document.querySelector(".notActive");
+
+const amBtn = document.querySelector(".amBtn");
+const amElement = document.querySelectorAll(".am");
+
+let activeButton = "Tigray";
+
+
+function resetSelection() {
+    checkboxes.forEach(checkbox => {
+        checkbox.checked = false; // Uncheck all checkboxes
+    });
+    nameDisplayContainer.innerHTML = ''; // Clear the dynamically generated forms
+}
+
+//When the tigray botton clicked
+tigBtn.addEventListener('click', function() {
+    resetSelection();
+    amElement.forEach(function(element) {
+        element.style.display = 'none';
+    });
+    tigElement.forEach(function(element) {
+        element.style.display = 'table-row';
+    });
+    // Hide rows with the notActive class
+    document.querySelectorAll('.notActive').forEach(function(row) {
+        row.style.display = 'none';
+    });
+    activeButton = 'Tigray';
+    updatePupsSpans();
+});
+// When the amhara botton clicked
+amBtn.addEventListener('click', function() {
+    resetSelection();
+    tigElement.forEach(function(element) {
+        element.style.display = 'none';
+    });
+    amElement.forEach(function(element) {
+        element.style.display = 'table-row';
+    });
+    // Hide rows with the notActive class (already hidden)
+    document.querySelectorAll('.notActive').forEach(function(row) {
+        row.style.display = 'none';
+    });
+    activeButton = "Amhara";
+    updatePupsSpans();
+});
+
+function updatePupsSpans(){
+    const pupsSpan = document.querySelectorAll('.pups');
+    pupsSpan.forEach(span =>{
+        if (activeButton === "Amhara"){
+            span.textContent = "__Fuel payment for Amhara DOC delivery from Tigray to Amhara Region.__";
+        } else {
+            span.textContent = "__Car rental payment for DOC delivery to customers.__";
+        }
+    });
+}
 
 // Loop through each checkbox and add an event listener
 checkboxes.forEach(checkbox => {
@@ -158,13 +282,14 @@ checkboxes.forEach(checkbox => {
     // Add event listener to each checkbox
     checkbox.addEventListener('change', function() {
         if (checkbox.checked) {
+            
             // Create a new <div> element with the name
             const newDiv = document.createElement('div');
             newDiv.classList.add('payment-form-div', 'papersize');
             
             // Add the driver's name to the form content
             newDiv.innerHTML = `
-                <div class="mt-2">
+                <div>
                     <input type="image" src="Picture1.png" class="d-block mx-auto" alt="MekelleFarm" width="150px" height="90px">
                 </div>
                 <div class="col font1 mt-5">
@@ -185,7 +310,7 @@ checkboxes.forEach(checkbox => {
                     <p>Amount in word ________________________________________________________________________________</p>
                 </div>
                 <div class="font2 my-5">
-                    <p>Purpose of Payment: <span class="pups">____Car rental payment for DOC delivery to customers.____</span></p>
+                    <p>Purpose of Payment: <span class="pups">__Car rental payment for DOC delivery to customers.__</span></p>
                 </div>
                 <div class="row">
                     <div class="col-4">
@@ -220,6 +345,8 @@ checkboxes.forEach(checkbox => {
             
             // Append the new div to the container
             nameDisplayContainer.appendChild(newDiv);
+
+            updatePupsSpans();
         } else {
             // Find the corresponding <div> with the driver's name and remove it
             const divs = nameDisplayContainer.querySelectorAll('div');
@@ -231,6 +358,7 @@ checkboxes.forEach(checkbox => {
         }
     });
 });
+
 </script>
 
 
